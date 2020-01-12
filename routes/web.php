@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/user/reg','User\IndexController@reg');
+Route::get('/user/login','User\IndexController@login');
+Route::get('/user/data','User\IndexController@getData');
